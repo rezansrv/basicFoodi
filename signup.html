@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="signup-form">
+    <h2>Sign Up</h2>
+    <form onsubmit="signup(event)">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <select id="country" required oninput="filterCountries()">
+        <option value="" disabled selected>Select your country</option>
+      </select>
+      <button type="submit" onclick="signup(event)">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Log In</a></p>
+  </div>
+  <style>
+
+  
+
+  </style>
+
+  <script src="assets/js/registry.js"></script>
+
+</body>
+</html>
